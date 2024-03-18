@@ -1,0 +1,101 @@
+import { Component } from '@angular/core';
+import { Matchup } from '../../interfaces/matchup';
+import { RouterModule } from '@angular/router';
+
+@Component({
+  selector: 'app-matchup-collection',
+  standalone: true,
+  imports: [RouterModule],
+  templateUrl: './matchup-collection.component.html',
+  styleUrl: './matchup-collection.component.scss'
+})
+export class MatchupCollectionComponent {
+  greatMatchups: Matchup[] = [
+    { name: 'Banjo-Kazooie', icon: 'https://ssb.wiki.gallery/images/thumb/9/97/Banjo_%26_Kazooie_SSBU.png/100px-Banjo_%26_Kazooie_SSBU.png' },
+    { name: 'Peach', icon: 'https://ssb.wiki.gallery/images/thumb/7/74/Peach_SSBU.png/89px-Peach_SSBU.png' },
+    { name: 'DonkeyKong', icon: 'https://ssb.wiki.gallery/images/thumb/c/c9/Donkey_Kong_SSBU.png/100px-Donkey_Kong_SSBU.png' },
+    { name: 'Dr. Mario', icon: 'https://ssb.wiki.gallery/images/thumb/3/3f/Dr._Mario_SSBU.png/100px-Dr._Mario_SSBU.png' },
+    { name: 'Duck Hunt', icon: 'https://ssb.wiki.gallery/images/thumb/d/d8/Duck_Hunt_SSBU.png/100px-Duck_Hunt_SSBU.png' },
+    { name: 'Ganondorf', icon: 'https://ssb.wiki.gallery/images/thumb/9/91/Ganondorf_SSBU.png/100px-Ganondorf_SSBU.png' },
+    { name: 'Ice Climbers', icon: 'https://ssb.wiki.gallery/images/thumb/1/12/Ice_Climbers_SSBU.png/100px-Ice_Climbers_SSBU.png' },
+    { name: 'Incineroar', icon: 'https://ssb.wiki.gallery/images/thumb/c/c4/Incineroar_SSBU.png/100px-Incineroar_SSBU.png' },
+    { name: 'Isabelle', icon: 'https://ssb.wiki.gallery/images/thumb/2/2b/Isabelle_SSBU.png/100px-Isabelle_SSBU.png' },
+    { name: 'King Dedede', icon: 'https://ssb.wiki.gallery/images/thumb/f/f5/King_Dedede_SSBU.png/100px-King_Dedede_SSBU.png' },
+    { name: 'Lucario', icon: 'https://ssb.wiki.gallery/images/thumb/0/08/Lucario_SSBU.png/100px-Lucario_SSBU.png' },
+    { name: 'Meta Knight', icon: 'https://ssb.wiki.gallery/images/thumb/0/00/Meta_Knight_SSBU.png/100px-Meta_Knight_SSBU.png' },
+    { name: 'Pac-Man', icon: 'https://ssb.wiki.gallery/images/thumb/0/03/Pac-Man_SSBU.png/100px-Pac-Man_SSBU.png' },
+    { name: 'Robin', icon: 'https://ssb.wiki.gallery/images/thumb/8/82/Robin_SSBU.png/100px-Robin_SSBU.png' },
+    { name: 'Piranha Plant', icon: 'https://ssb.wiki.gallery/images/thumb/f/f0/Piranha_Plant_SSBU.png/100px-Piranha_Plant_SSBU.png' },
+    { name: 'Terry', icon: 'https://ssb.wiki.gallery/images/thumb/f/f5/Terry_SSBU.png/100px-Terry_SSBU.png' },
+    { name: 'Toon Link', icon: 'https://ssb.wiki.gallery/images/thumb/5/56/Toon_Link_SSBU.png/95px-Toon_Link_SSBU.png' },
+    { name: 'Villager', icon: 'https://ssb.wiki.gallery/images/thumb/a/ac/Villager_SSBU.png/100px-Villager_SSBU.png' },
+    { name: 'Wii Fit Trainer', icon: 'https://ssb.wiki.gallery/images/thumb/f/ff/Wii_Fit_Trainer_SSBU.png/100px-Wii_Fit_Trainer_SSBU.png' },
+    { name: 'Link', icon: 'https://ssb.wiki.gallery/images/thumb/8/84/Link_SSBU.png/100px-Link_SSBU.png' },
+  ]
+  goodMatchups: Matchup[] = [
+    { name: 'Chrom', icon: 'https://ssb.wiki.gallery/images/thumb/5/57/Chrom_SSBU.png/85px-Chrom_SSBU.png' },
+    { name: 'Bayonetta', icon: 'https://ssb.wiki.gallery/images/thumb/7/7c/Bayonetta_SSBU.png/100px-Bayonetta_SSBU.png' },
+    { name: 'Corrin', icon: 'https://ssb.wiki.gallery/images/thumb/c/c4/Corrin_SSBU.png/100px-Corrin_SSBU.png' },
+    { name: 'Pit', icon: 'https://ssb.wiki.gallery/images/thumb/3/38/Pit_SSBU.png/100px-Pit_SSBU.png' },
+    { name: 'Greninja', icon: 'https://ssb.wiki.gallery/images/thumb/d/da/Greninja_SSBU.png/100px-Greninja_SSBU.png' },
+    { name: 'Ike', icon: 'https://ssb.wiki.gallery/images/thumb/8/86/Ike_SSBU.png/100px-Ike_SSBU.png' },
+    { name: 'Kazuya', icon: 'https://ssb.wiki.gallery/images/thumb/d/d9/Kazuya_SSBU.png/100px-Kazuya_SSBU.png' },
+    { name: 'King Krool', icon: 'https://ssb.wiki.gallery/images/thumb/b/b6/King_K._Rool_SSBU.png/100px-King_K._Rool_SSBU.png' },
+    { name: 'Kirby', icon: 'https://ssb.wiki.gallery/images/thumb/0/07/Kirby_SSBU.png/100px-Kirby_SSBU.png' },
+    { name: 'Little Mac', icon: 'https://ssb.wiki.gallery/images/thumb/5/53/Little_Mac_SSBU.png/100px-Little_Mac_SSBU.png' },
+    { name: 'Ness', icon: 'https://ssb.wiki.gallery/images/thumb/8/82/Ness_SSBU.png/100px-Ness_SSBU.png' },
+    { name: 'Lucas', icon: 'https://ssb.wiki.gallery/images/thumb/8/81/Lucas_SSBU.png/100px-Lucas_SSBU.png' },
+    { name: 'Marth', icon: 'https://ssb.wiki.gallery/images/thumb/e/e9/Marth_SSBU.png/100px-Marth_SSBU.png' },
+    { name: 'Luigi', icon: 'https://ssb.wiki.gallery/images/thumb/b/bb/Luigi_SSBU.png/91px-Luigi_SSBU.png' },
+    { name: 'Megaman', icon: 'https://ssb.wiki.gallery/images/thumb/4/46/Mega_Man_SSBU.png/100px-Mega_Man_SSBU.png' },
+    { name: 'Mewtwo', icon: 'https://ssb.wiki.gallery/images/thumb/d/de/Mewtwo_SSBU.png/99px-Mewtwo_SSBU.png' },
+    { name: 'Pokemon Trainer', icon: 'https://ssb.wiki.gallery/images/thumb/2/28/Pok%C3%A9mon_Trainer_%28solo%29_SSBU.png/100px-Pok%C3%A9mon_Trainer_%28solo%29_SSBU.png' },
+    { name: 'Richter', icon: 'https://ssb.wiki.gallery/images/thumb/c/c2/Richter_SSBU.png/100px-Richter_SSBU.png' },
+    { name: 'Ridley', icon: 'https://ssb.wiki.gallery/images/thumb/2/27/Ridley_SSBU.png/100px-Ridley_SSBU.png' },
+    { name: 'ROB', icon: 'https://ssb.wiki.gallery/images/thumb/6/60/R.O.B._SSBU.png/100px-R.O.B._SSBU.png' },
+    { name: 'Ryu', icon: 'https://ssb.wiki.gallery/images/thumb/6/61/Ryu_SSBU.png/100px-Ryu_SSBU.png' },
+    { name: 'Rosalina', icon: 'https://ssb.wiki.gallery/images/thumb/1/16/Rosalina_%26_Luma_SSBU.png/100px-Rosalina_%26_Luma_SSBU.png' },
+    { name: 'Sephiroth', icon: 'https://ssb.wiki.gallery/images/thumb/4/49/Sephiroth_SSBU.png/100px-Sephiroth_SSBU.png' },
+    { name: 'Snake', icon: 'https://ssb.wiki.gallery/images/thumb/0/02/Snake_SSBU.png/82px-Snake_SSBU.png' },
+    { name: 'Sora', icon: 'https://ssb.wiki.gallery/images/thumb/2/2d/Sora_SSBU.png/100px-Sora_SSBU.png' },
+    { name: 'Steve', icon: 'https://ssb.wiki.gallery/images/thumb/3/3a/Steve_SSBU.png/73px-Steve_SSBU.png' },
+    { name: 'Yoshi', icon: 'https://ssb.wiki.gallery/images/thumb/8/8d/Yoshi_SSBU.png/100px-Yoshi_SSBU.png' },
+    { name: 'Young Link', icon: 'https://ssb.wiki.gallery/images/thumb/8/8a/Young_Link_SSBU.png/100px-Young_Link_SSBU.png' },
+    { name: 'Zelda', icon: 'https://ssb.wiki.gallery/images/thumb/c/c8/Zelda_SSBU.png/100px-Zelda_SSBU.png' },
+    { name: 'Bowser Jr', icon: 'https://ssb.wiki.gallery/images/thumb/2/2b/Bowser_Jr._SSBU.png/100px-Bowser_Jr._SSBU.png' },
+  ]
+  neutralMatchups: Matchup[] = [
+    { name: 'Bowser', icon: 'https://ssb.wiki.gallery/images/thumb/4/49/Bowser_SSBU.png/100px-Bowser_SSBU.png' },
+    { name: 'Captain Falcon', icon: 'https://ssb.wiki.gallery/images/thumb/d/da/Captain_Falcon_SSBU.png/100px-Captain_Falcon_SSBU.png' },
+    { name: 'Hero', icon: 'https://ssb.wiki.gallery/images/thumb/0/07/Hero_SSBU.png/100px-Hero_SSBU.png' },
+    { name: 'Inkling', icon: 'https://ssb.wiki.gallery/images/thumb/2/2e/Inkling_SSBU.png/100px-Inkling_SSBU.png' },
+    { name: 'Jigglypuff', icon: 'https://ssb.wiki.gallery/images/thumb/6/6a/Jigglypuff_SSBU.png/100px-Jigglypuff_SSBU.png' },
+    { name: 'Ken', icon: 'https://ssb.wiki.gallery/images/thumb/f/f6/Ken_SSBU.png/100px-Ken_SSBU.png' },
+    { name: 'Lucina', icon: 'https://ssb.wiki.gallery/images/thumb/d/dc/Lucina_SSBU.png/100px-Lucina_SSBU.png' },
+    { name: 'Mario', icon: 'https://ssb.wiki.gallery/images/thumb/4/44/Mario_SSBU.png/100px-Mario_SSBU.png' },
+    { name: 'Palutena', icon: 'https://ssb.wiki.gallery/images/thumb/6/6b/Palutena_SSBU.png/95px-Palutena_SSBU.png' },
+    { name: 'Game and Watch', icon: 'https://ssb.wiki.gallery/images/thumb/c/cb/Mr._Game_%26_Watch_SSBU.png/100px-Mr._Game_%26_Watch_SSBU.png' },
+    { name: 'Roy', icon: 'https://ssb.wiki.gallery/images/thumb/9/9d/Roy_SSBU.png/100px-Roy_SSBU.png' },
+    { name: 'Shulk', icon: 'https://ssb.wiki.gallery/images/thumb/0/0f/Shulk_SSBU.png/100px-Shulk_SSBU.png' },
+    { name: 'Wario', icon: 'https://ssb.wiki.gallery/images/thumb/0/04/Wario_SSBU.png/100px-Wario_SSBU.png' },
+    { name: 'Wolf', icon: 'https://ssb.wiki.gallery/images/thumb/8/8a/Wolf_SSBU.png/100px-Wolf_SSBU.png' },
+  ]
+  badMatchups: Matchup[] = [
+    { name: 'Cloud', icon: 'https://ssb.wiki.gallery/images/thumb/b/b3/Cloud_SSBU.png/100px-Cloud_SSBU.png' },
+    { name: 'Samus', icon: 'https://ssb.wiki.gallery/images/thumb/0/03/Samus_SSBU.png/100px-Samus_SSBU.png' },
+    { name: 'Diddy Kong', icon: 'https://ssb.wiki.gallery/images/thumb/a/a7/Diddy_Kong_SSBU.png/96px-Diddy_Kong_SSBU.png' },
+    { name: 'Falco', icon: 'https://ssb.wiki.gallery/images/thumb/8/80/Falco_SSBU.png/100px-Falco_SSBU.png' },
+    { name: 'Fox', icon: 'https://ssb.wiki.gallery/images/thumb/2/2f/Fox_SSBU.png/100px-Fox_SSBU.png' },
+    { name: 'Zero Suit Samus', icon: 'https://ssb.wiki.gallery/images/thumb/f/f0/Zero_Suit_Samus_SSBU.png/100px-Zero_Suit_Samus_SSBU.png' },
+    { name: 'Olimar', icon: 'https://ssb.wiki.gallery/images/thumb/b/b3/Olimar_SSBU.png/100px-Olimar_SSBU.png' },
+    { name: 'Sheik', icon: 'https://ssb.wiki.gallery/images/thumb/0/00/Sheik_SSBU.png/100px-Sheik_SSBU.png' },
+  ]
+  terribleMatchups: Matchup[] = [
+    { name: 'Joker', icon: 'https://ssb.wiki.gallery/images/thumb/5/5c/Joker_SSBU.png/100px-Joker_SSBU.png' },
+    { name: 'Minmin', icon: 'https://ssb.wiki.gallery/images/thumb/3/35/Min_Min_SSBU.png/100px-Min_Min_SSBU.png' },
+    { name: 'Aegis', icon: 'https://ssb.wiki.gallery/images/thumb/5/58/Mythra_SSBU.png/94px-Mythra_SSBU.png' },
+    { name: 'Pichu', icon: 'https://ssb.wiki.gallery/images/thumb/c/c1/Pichu_SSBU.png/100px-Pichu_SSBU.png' },
+    { name: 'Pikachu', icon: 'https://ssb.wiki.gallery/images/thumb/9/93/Pikachu_SSBU.png/100px-Pikachu_SSBU.png' },
+    { name: 'Sonic', icon: 'https://ssb.wiki.gallery/images/thumb/b/ba/Sonic_SSBU.png/100px-Sonic_SSBU.png' },
+  ]
+}

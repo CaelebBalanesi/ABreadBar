@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: center;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}

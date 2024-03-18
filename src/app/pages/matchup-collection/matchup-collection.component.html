@@ -1,0 +1,45 @@
+<div class="row" style="background-color: red;">
+    @for (item of greatMatchups; track item) {
+        <div class="icon">
+            <a [routerLink]="['/matchup', item.name]">
+                <img [src]="item.icon">
+            </a>
+        </div>
+    }
+</div>
+<div class="row" style="background-color: blue;">
+    @for (item of goodMatchups; track item) {
+        <div class="icon">
+            <a [routerLink]="['/matchup', item.name]">
+                <img [src]="item.icon">
+            </a>
+        </div>
+    }
+</div>
+<div class="row" style="background-color: green;">
+    @for (item of neutralMatchups; track item) {
+        <div class="icon">
+            <a [routerLink]="['/matchup', item.name]">
+                <img [src]="item.icon">
+            </a>
+        </div>
+    }
+</div>
+<div class="row" style="background-color: yellow;">
+    @for (item of badMatchups; track item) {
+        <div class="icon">
+            <a [routerLink]="['/matchup', item.name]">
+                <img [src]="item.icon">
+            </a>
+        </div>
+    }
+</div>
+<div class="row" style="background-color: orange;">
+    @for (item of terribleMatchups; track item) {
+        <div class="icon">
+            <a [routerLink]="['/matchup', item.name]">
+                <img [src]="item.icon">
+            </a>
+        </div>
+    }
+</div>
